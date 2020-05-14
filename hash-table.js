@@ -1,3 +1,5 @@
+// Check if we relocate words in the first string, does it match with second string or not. #javascript
+
 const checkIfMatch = (string1, string2) => {
     if (string1.length !== string2.length) {
       return false;
