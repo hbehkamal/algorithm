@@ -5,13 +5,9 @@ URL:  https://projecteuler.net/problem=1
 #projecteuler 
 #javascript */
 
-const fn = () => {
-    let x = 0;
-    for (let i = 1; i < 1000; i++) {
-        if ((i % 3 === 0) || (i % 5 === 0)) {
-            x += i;
-        }
-    }
-    return x;
+const sumNaturalNumbers = (multiple1, multiple2) => {
+    let sum = 0;
+    for (let index = 1; index < 1000; index++) if (index % multiple1  === 0 || index % multiple2 === 0) sum += index;
+    return sum;
 }
-console.log('---->', fn());
+console.log('---->', sumNaturalNumbers(3, 5)); 
